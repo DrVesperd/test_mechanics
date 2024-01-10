@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq5xl88hugoxh"]
+
+[ext_resource type="PackedScene" uid="uid://t8hsa1fsqlso" path="res://wall.tscn" id="1_i256f"]
+[ext_resource type="PackedScene" uid="uid://bqnbktd2p75oi" path="res://obstacle.tscn" id="2_nh5b8"]
+[ext_resource type="PackedScene" uid="uid://1xjo2h4g4y87" path="res://player.tscn" id="3_x3vkt"]
+
+[node name="Background" type="Node3D"]
+
+[node name="Wall" parent="." instance=ExtResource("1_i256f")]
+
+[node name="Wall2" parent="." instance=ExtResource("1_i256f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Wall3" parent="." instance=ExtResource("1_i256f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Wall4" parent="." instance=ExtResource("1_i256f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="Wall5" parent="." instance=ExtResource("1_i256f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
+
+[node name="Wall6" parent="." instance=ExtResource("1_i256f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="Obstacle" parent="." instance=ExtResource("2_nh5b8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0)
+
+[node name="Obstacle2" parent="." instance=ExtResource("2_nh5b8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, -4)
+
+[node name="player" parent="." instance=ExtResource("3_x3vkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.842427, -0.167827, 0.512006, -0.286983, 0.664489, 0.689996, -0.456023, -0.728209, 0.51162, 2, 3, 0)
+shadow_enabled = true

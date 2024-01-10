@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://t8hsa1fsqlso"]
+
+[ext_resource type="PackedScene" uid="uid://d1txjd72c5xxd" path="res://BlenderMeshes/plane.blend" id="1_lbwcv"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="plane" parent="." instance=ExtResource("1_lbwcv")]
+
+[editable path="plane"]
